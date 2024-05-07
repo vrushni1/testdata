@@ -1,4 +1,4 @@
-name: GitHub Actions Test
+name: Create and Start Release
 
 on: [workflow_dispatch]
 
@@ -6,19 +6,16 @@ jobs:
     create-release:
       runs-on: ubuntu-latest
       steps:
-       
-        - name: Checkout
-          uses: actions/checkout@v4
 
         - name: Create & Start Release
           id: release
-          uses: ./
+          uses: digital-ai/github-actions-release@main
           with:
-            serverUrl: ${{secrets.SERVERURL}}
-            username: ${{secrets.USERNAME}}
-            password: ${{secrets.PASSWORD}}
-            templateId: ${{secrets.TEMPLATEID}}
+            serverUrl: ${{ secrets.SERVERURL }}
+            username: ${{ secrets.USERNAME }}
+            password: ${{ secrets.PASSWORD }}
+            templateId: 'Folder3f5cf31df154440495d8af9425aa9cdb/Releasec4e4b7bce46f4720a43ead5da8543086'
 
         - name: Get Release Data
           id: output
-          run: echo ${{steps.release.outputs.response}}
+          run: echo ${{ steps.release.outputs.response }}
