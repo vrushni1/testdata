@@ -1,22 +1,24 @@
-name: Create and Start Release
+name: GitHub Actions Test
 
 on: [workflow_dispatch]
 
 jobs:
-  create-and-start-release:
-    runs-on: ubuntu-latest
-    steps:
-    
-      - name: Create and Start Release
-        id: release
-        uses: digital-ai/github-actions-release@main
-        with:
-          serverUrl: ${{ secrets.SERVERURL }}
-		  username: ${{ secrets.USERNAME }}
-		  password: ${{ secrets.PASSWORD }}
-		  templateId: ${{ secrets.TEMPLATEID }}
-          releaseTitle: 'New Release from GitHub Actions'
-          startRelease: true
+    create-release:
+      runs-on: ubuntu-latest
+      steps:
+       
+        - name: Checkout
+          uses: actions/checkout@v4
 
-       - name: Get Release Data
-         run: echo ${{ steps.release.outputs.response }}
+        - name: Create & Start Release
+          id: release
+          uses: ./
+          with:
+            serverUrl: ${{ secrets.SERVERURL }}
+            username: ${{ secrets.USERNAME }}
+            password: ${{ secrets.PASSWORD }}
+            templateId: ${{ secrets.TEMPLATEID }}
+
+        - name: Get Release Data
+          id: output
+          run: echo ${{ steps.release.outputs.response }}
