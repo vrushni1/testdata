@@ -14,11 +14,11 @@ jobs:
           id: release
           uses: ./
           with:
-            serverUrl: ${{ secrets.SERVERURL }}
-            username: ${{ secrets.USERNAME }}
-            password: ${{ secrets.PASSWORD }}
-            templateId: ${{ secrets.TEMPLATEID }}
+            serverUrl: ${{secrets.SERVERURL}}
+            username: ${{secrets.USERNAME}}
+            password: ${{secrets.PASSWORD}}
+            templateId: ${{secrets.TEMPLATEID}}
 
         - name: Get Release Data
           id: output
-          run: echo ${{ steps.release.outputs.response }}
+          run: echo ${{steps.release.outputs.response}}
