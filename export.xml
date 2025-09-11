@@ -1,0 +1,625 @@
+<datapower-configuration version="3"><export-details><description>Exported Configuration</description><user>root</user><domain>ACESIT</domain><comment/><product-id>844152X</product-id><product>IDG</product><display-product>IDG</display-product><model>IBM DataPower Gateway</model><display-model>IBM DataPower Gateway</display-model><device-name>devibmdp02</device-name><serial-number>7803854</serial-number><firmware-version>IDG.10.6.0.5</firmware-version><display-firmware-version>IDG.10.6.0.5</display-firmware-version><firmware-build>374029</firmware-build><delivery-type>LTS</delivery-type><firmware-timestamp>2025/04/25 23:53:17</firmware-timestamp><current-date>2025-08-17</current-date><current-time>09:29:23 DST</current-time><reset-date>2025-08-12</reset-date><reset-time>15:34:21 DST</reset-time><login-message/><custom-ui-file/><intrusion-detection>enable</intrusion-detection></export-details><interface-data><interface name="mgt0" type="Ethernet" vers="ipv4" ip-addr="192.168.1.100"/><interface name="eth11" type="Ethernet" vers="ipv4" ip-addr="192.168.12.141"/><interface name="eth11" type="Ethernet" vers="ipv6" ip-addr="fe80::c600:adff:fe45:51b5"/><interface name="eth11" type="Ethernet" vers="ipv6" ip-addr="2001:1670:2:16::208d"/><interface name="VLAN_241_Segment" type="VLAN" vers="ipv4" ip-addr="172.20.241.32"/><interface name="VLAN_244_Segment" type="VLAN" vers="ipv4" ip-addr="172.20.244.32"/><interface name="VLAN_235_Segment" type="VLAN" vers="ipv4" ip-addr="172.20.235.33"/></interface-data><configuration domain="ACESIT"><CryptoCertificate name="ecconus" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///bmtest.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="ivrlive" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///bmtest.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="ctilive" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///testsitctiappp.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="ctiDR" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///testsitctiappp.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="LuluPrimeApi" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///bmtest.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="EsqIMS" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///bmtest.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="TI_Live" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///tiplusuat.crt</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="iMAL_ECC" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///bmtest.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="iMAL_MBS" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///bmtest.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="eccprod" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///bmtest.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="StatementPrinter" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///bmtest.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="BankPay" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///testpseccapp.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="ControlM" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///controlm.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="CDS" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///bmtest.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="FinnOne" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///testfinneoapp.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="wallet" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///testmobwltapp2.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="Tablet" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///bmtest.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="CTI_MTQ_DR" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///testsitctiappp.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="BankPay_MTHQ" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///sitmthqeccapp.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="Postilion-echannel" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///News1sitportal.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="iMALR14_IB" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///bmtest.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="iMALR14_Backend" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///bmtest.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="BMOffers" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///bmtest.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="EBriefCase" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///bmtest.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="CCH" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///bmtest.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="Omniflow-PROD" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///bmtest.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="IBMB-Corp1" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///testfinibmbapp4.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="IBMB-Corp2" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///testfinibmbapp1.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="IBMB-Retail1" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///bmtest.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="IBMB-Retail2" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///testfinibmbapp3.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="BancAssurance_New" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///testfclbaapnew.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="LOS" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///bmtest.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="SMS_HA_1" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///smsha.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="SMS_HA_2" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///smsha.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="Prime_AppMgr" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///bmtest.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="cti-Meethaq" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///bmtest.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="ivr-Meethaq" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///bmtest.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="ERP" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///ERP_SIT_New.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="FMS-M6-Comp1" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///uatfmsffcomp1_2022.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="FMS-M6-Comp2" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///uatfmsffcomp2_2022.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="TXNBanking_1" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///uatbo.txnbanking.com.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="TXNBanking_2" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///uatbo.txnbanking.com.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="CPS_1" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///bmtest.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="CPS_2" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///bmtest.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="postilion-echannel2" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///News1sitportal.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="IBMB-DR_App1" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///bmtest.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="IBMB-DR_App2" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///bmtest.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="bmtest" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///bmtest.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="MTQ_IBMB" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///sit1mtqibmbapp.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="IBMB_MTQ_DEV" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///sit1mtqibmbapp.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="testachreconapp" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///testachreconapp.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="CCH_Cert" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///bmtest.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="Omniflow" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///bmtest.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="OmniFlow-SITNewGen" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///omniflow.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="Omniflow-UAT" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///bmtest.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="Omniflow_SIT" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///bmtest.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="Omniflow_UAT" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///bmtest.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="cti_Mtq" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///MethaqESBCertificate.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="ER-Test" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///ER.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="MTQ_BankPayIBMB" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///BankPayMTQ.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoCertificate name="ESQIMS_New" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Filename>cert:///ESQ_App.cer</Filename>
+<PasswordAlias>off</PasswordAlias>
+<IgnoreExpiration>off</IgnoreExpiration></CryptoCertificate><CryptoValCred name="esbAAAValCred" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<Certificate class="CryptoCertificate">ecconus</Certificate>
+<Certificate class="CryptoCertificate">ivrlive</Certificate>
+<Certificate class="CryptoCertificate">ctilive</Certificate>
+<Certificate class="CryptoCertificate">ctiDR</Certificate>
+<Certificate class="CryptoCertificate">LuluPrimeApi</Certificate>
+<Certificate class="CryptoCertificate">EsqIMS</Certificate>
+<Certificate class="CryptoCertificate">TI_Live</Certificate>
+<Certificate class="CryptoCertificate">iMAL_ECC</Certificate>
+<Certificate class="CryptoCertificate">iMAL_MBS</Certificate>
+<Certificate class="CryptoCertificate">eccprod</Certificate>
+<Certificate class="CryptoCertificate">StatementPrinter</Certificate>
+<Certificate class="CryptoCertificate">BankPay</Certificate>
+<Certificate class="CryptoCertificate">ControlM</Certificate>
+<Certificate class="CryptoCertificate">CDS</Certificate>
+<Certificate class="CryptoCertificate">FinnOne</Certificate>
+<Certificate class="CryptoCertificate">wallet</Certificate>
+<Certificate class="CryptoCertificate">Tablet</Certificate>
+<Certificate class="CryptoCertificate">CTI_MTQ_DR</Certificate>
+<Certificate class="CryptoCertificate">BankPay_MTHQ</Certificate>
+<Certificate class="CryptoCertificate">Postilion-echannel</Certificate>
+<Certificate class="CryptoCertificate">iMALR14_IB</Certificate>
+<Certificate class="CryptoCertificate">iMALR14_Backend</Certificate>
+<Certificate class="CryptoCertificate">BMOffers</Certificate>
+<Certificate class="CryptoCertificate">EBriefCase</Certificate>
+<Certificate class="CryptoCertificate">CCH</Certificate>
+<Certificate class="CryptoCertificate">Omniflow-PROD</Certificate>
+<Certificate class="CryptoCertificate">IBMB-Corp1</Certificate>
+<Certificate class="CryptoCertificate">IBMB-Corp2</Certificate>
+<Certificate class="CryptoCertificate">IBMB-Retail1</Certificate>
+<Certificate class="CryptoCertificate">IBMB-Retail2</Certificate>
+<Certificate class="CryptoCertificate">BancAssurance_New</Certificate>
+<Certificate class="CryptoCertificate">LOS</Certificate>
+<Certificate class="CryptoCertificate">SMS_HA_1</Certificate>
+<Certificate class="CryptoCertificate">SMS_HA_2</Certificate>
+<Certificate class="CryptoCertificate">Prime_AppMgr</Certificate>
+<Certificate class="CryptoCertificate">cti-Meethaq</Certificate>
+<Certificate class="CryptoCertificate">ivr-Meethaq</Certificate>
+<Certificate class="CryptoCertificate">ERP</Certificate>
+<Certificate class="CryptoCertificate">FMS-M6-Comp1</Certificate>
+<Certificate class="CryptoCertificate">FMS-M6-Comp2</Certificate>
+<Certificate class="CryptoCertificate">TXNBanking_1</Certificate>
+<Certificate class="CryptoCertificate">TXNBanking_2</Certificate>
+<Certificate class="CryptoCertificate">CPS_1</Certificate>
+<Certificate class="CryptoCertificate">CPS_2</Certificate>
+<Certificate class="CryptoCertificate">postilion-echannel2</Certificate>
+<Certificate class="CryptoCertificate">IBMB-DR_App1</Certificate>
+<Certificate class="CryptoCertificate">IBMB-DR_App2</Certificate>
+<Certificate class="CryptoCertificate">bmtest</Certificate>
+<Certificate class="CryptoCertificate">MTQ_IBMB</Certificate>
+<Certificate class="CryptoCertificate">IBMB_MTQ_DEV</Certificate>
+<Certificate class="CryptoCertificate">testachreconapp</Certificate>
+<Certificate class="CryptoCertificate">CCH_Cert</Certificate>
+<Certificate class="CryptoCertificate">Omniflow</Certificate>
+<Certificate class="CryptoCertificate">OmniFlow-SITNewGen</Certificate>
+<Certificate class="CryptoCertificate">Omniflow-UAT</Certificate>
+<Certificate class="CryptoCertificate">Omniflow_SIT</Certificate>
+<Certificate class="CryptoCertificate">Omniflow_UAT</Certificate>
+<Certificate class="CryptoCertificate">cti_Mtq</Certificate>
+<Certificate class="CryptoCertificate">ER-Test</Certificate>
+<Certificate class="CryptoCertificate">MTQ_BankPayIBMB</Certificate>
+<Certificate class="CryptoCertificate">ESQIMS_New</Certificate>
+<CertValidationMode>legacy</CertValidationMode>
+<UseCRL>on</UseCRL>
+<RequireCRL>off</RequireCRL>
+<CRLDPHandling>ignore</CRLDPHandling>
+<InitialPolicySet>2.5.29.32.0</InitialPolicySet>
+<ExplicitPolicy>off</ExplicitPolicy>
+<CheckDates>on</CheckDates></CryptoValCred><AAAPolicy name="ESB" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:dp="http://www.datapower.com/schemas/management">
+<mAdminState>enabled</mAdminState>
+<ExtractIdentity>
+<EIBitmap>
+<http-basic-auth>off</http-basic-auth>
+<wssec-username>off</wssec-username>
+<wssec-derived-key>off</wssec-derived-key>
+<wssec-binary-token>off</wssec-binary-token>
+<ws-secure-conversation>off</ws-secure-conversation>
+<ws-trust>off</ws-trust>
+<kerberos>off</kerberos>
+<kerberos-spnego>off</kerberos-spnego>
+<client-ssl>on</client-ssl>
+<saml-attr-name>off</saml-attr-name>
+<saml-authen-name>off</saml-authen-name>
+<saml-artifact>off</saml-artifact>
+<client-ip-address>off</client-ip-address>
+<signer-dn>off</signer-dn>
+<token>off</token>
+<cookie-token>off</cookie-token>
+<ltpa>off</ltpa>
+<metadata>off</metadata>
+<jwt>off</jwt>
+<custom>off</custom>
+<html-forms-auth>off</html-forms-auth>
+<social-login>off</social-login>
+<oauth>off</oauth></EIBitmap>
+<EICustomURL/>
+<EIXPath/>
+<EISignerDNValcred/>
+<EICookieName/>
+<EIBasicAuthRealm>login</EIBasicAuthRealm>
+<EIUseWSSec>off</EIUseWSSec>
+<EIMetadata/>
+<EIAllowRemoteTokenReference>off</EIAllowRemoteTokenReference>
+<EIRemoteTokenProcessService/>
+<EIPasswordRetrievalMechanism>xmlfile</EIPasswordRetrievalMechanism>
+<EIPasswordRetrievalCustomURL/>
+<EIPasswordRetrievalAAAInfoURL/>
+<EISSLProxyProfile/>
+<EIFormsLoginPolicy/>
+<EIOAuthClientGroup/>
+<EISSLClientConfigType>proxy</EISSLClientConfigType>
+<EISSLClientProfile/>
+<EIJWTValidator/>
+<EISocialLoginPolicy/>
+<EISAMLResponseValCred/></ExtractIdentity>
+<Authenticate>
+<AUMethod>client-ssl</AUMethod>
+<AUCustomURL/>
+<AUMapURL/>
+<AUHost/>
+<AUPort/>
+<AUSSLValcred class="CryptoValCred">esbAAAValCred</AUSSLValcred>
+<AUCacheAllow>absolute</AUCacheAllow>
+<AUCacheTTL>3</AUCacheTTL>
+<AUKerberosPrincipal/>
+<AUKerberosPassword/>
+<AUClearTrustServerURL/>
+<AUClearTrustApplication/>
+<AUSAMLArtifactResponder/>
+<AUKerberosVerifySignature>on</AUKerberosVerifySignature>
+<AUNetegrityBaseURI/>
+<AUSAMLAuthQueryServer/>
+<AUSAMLVersion>1.1</AUSAMLVersion>
+<AULDAPPrefix>cn=</AULDAPPrefix>
+<AULDAPSuffix/>
+<AULDAPLoadBalanceGroup/>
+<AUKerberosKeytab/>
+<AUWSTrustURL/>
+<AUSAML2Issuer/>
+<AUSignerValcred/>
+<AUSignedXPath/>
+<AUSSLProxyProfile/>
+<AUNetegrityConfig/>
+<AULDAPBindDN/>
+<AULDAPBindPassword/>
+<AULDAPSearchAttribute>userPassword</AULDAPSearchAttribute>
+<AULTPATokenVersionsBitmap>
+<LTPA>off</LTPA>
+<LTPA2>on</LTPA2>
+<LTPADomino>off</LTPADomino></AULTPATokenVersionsBitmap>
+<AULTPAKeyFile/>
+<AULTPAKeyFilePassword/>
+<AULTPAStashFile/>
+<AUBinaryTokenX509Valcred/>
+<AUTAMServer/>
+<AUAllowRemoteTokenReference>off</AUAllowRemoteTokenReference>
+<AURemoteTokenProcessService/>
+<AUWSTrustVersion>1.2</AUWSTrustVersion>
+<AULDAPSearchForDN>off</AULDAPSearchForDN>
+<AULDAPSearchParameters/>
+<AUWSTrustRequireClientEntropy>off</AUWSTrustRequireClientEntropy>
+<AUWSTrustClientEntropySize>32</AUWSTrustClientEntropySize>
+<AUWSTrustRequireServerEntropy>off</AUWSTrustRequireServerEntropy>
+<AUWSTrustServerEntropySize>32</AUWSTrustServerEntropySize>
+<AUWSTrustRequireRSTC>off</AUWSTrustRequireRSTC>
+<AUWSTrustRequireAppliesToHeader>off</AUWSTrustRequireAppliesToHeader>
+<AUWSTrustAppliesToHeader/>
+<AUWSTrustEncryptionCertificate/>
+<AUZOSNSSConfig/>
+<AULDAPAttributes/>
+<AUSkewTime>0</AUSkewTime>
+<AUTAMPACReturn>off</AUTAMPACReturn>
+<AULDAPReadTimeout>60</AULDAPReadTimeout>
+<AUSSLClientConfigType>proxy</AUSSLClientConfigType>
+<AUSSLClientProfile/>
+<AULDAPBindPasswordAlias/>
+<AULTPAKeyFilePasswordAlias/>
+<AUSMRequestType>webagent</AUSMRequestType>
+<AUSMCookieFlow>
+<frontend>off</frontend>
+<backend>off</backend></AUSMCookieFlow>
+<AUSMHeaderFlow>
+<frontend>off</frontend>
+<backend>off</backend></AUSMHeaderFlow>
+<AUSMCookieAttributes/>
+<AUCacheControl>disable-all</AUCacheControl></Authenticate>
+<MapCredentials>
+<MCMethod>xmlfile</MCMethod>
+<MCCustomURL/>
+<MCMapURL>local:///AAA/AAAInfo.xml</MCMapURL>
+<MCMapXPath/>
+<MCTFIMEndpoint/></MapCredentials>
+<ExtractResource>
+<ERBitmap>
+<target-url>off</target-url>
+<original-url>off</original-url>
+<request-uri>off</request-uri>
+<request-opname>off</request-opname>
+<http-method>off</http-method>
+<XPath>on</XPath>
+<metadata>off</metadata></ERBitmap>
+<ERXPath>/*[local-name()='Envelope']/*[local-name()='Body']/*/*[local-name()='ReqHdr']/*[local-name()='ServiceContext']/*[local-name()='ServiceName']</ERXPath>
+<ERMetadata/></ExtractResource>
+<MapResource>
+<MRMethod>none</MRMethod>
+<MRCustomURL/>
+<MRMapURL/>
+<MRMapXPath/>
+<MRTAMMap>WebSEAL</MRTAMMap>
+<MRTAMInstancePrefix/>
+<MRTAMWebSEALDynURLFile/></MapResource>
+<Authorize>
+<AZMethod>custom</AZMethod>
+<AZCustomURL>local:///AAA/ldap_ESBPROD.xslt</AZCustomURL>
+<AZMapURL/>
+<AZHost/>
+<AZPort/>
+<AZLDAPGroup/>
+<AZValcred/>
+<AZSAMLURL/>
+<AZSAMLType>any</AZSAMLType>
+<AZSAMLXPath/>
+<AZSAMLNameQualifier/>
+<AZCacheAllow>maximum</AZCacheAllow>
+<AZCacheTTL>300</AZCacheTTL>
+<AZNetegrityBaseURI/>
+<AZNetegrityOpNameExtension/>
+<AZClearTrustServerURL/>
+<AZSAMLVersion>1.1</AZSAMLVersion>
+<AZLDAPLoadBalanceGroup/>
+<AZLDAPBindDN/>
+<AZLDAPBindPassword/>
+<AZLDAPGroupAttribute>member</AZLDAPGroupAttribute>
+<AZSSLProxyProfile/>
+<AZNetegrityConfig/>
+<AZLDAPSearchScope>subtree</AZLDAPSearchScope>
+<AZLDAPSearchFilter>(objectClass=*)</AZLDAPSearchFilter>
+<AZXACMLVersion>2.0</AZXACMLVersion>
+<AZXACMLPEPType>deny-biased</AZXACMLPEPType>
+<AZXACMLUseOnBoxPDP>on</AZXACMLUseOnBoxPDP>
+<AZXACMLPDP/>
+<AZXACMLExternalPDPUrl/>
+<AZXACMLBindingMethod>custom</AZXACMLBindingMethod>
+<AZXACMLBindingObject/>
+<AZXACMLBindingXSL/>
+<AZXACMLCustomObligation/>
+<AZXACMLUseSAML2>off</AZXACMLUseSAML2>
+<AZTAMServer/>
+<AZTAMDefaultAction>T</AZTAMDefaultAction>
+<AZTAMActionResourceMap/>
+<AZXACMLUseSOAP>off</AZXACMLUseSOAP>
+<AZZOSNSSConfig/>
+<AZSAFDefaultAction>r</AZSAFDefaultAction>
+<AZLDAPAttributes/>
+<AZSkewTime>0</AZSkewTime>
+<AZOAuthValidationEndpointType>tfim</AZOAuthValidationEndpointType>
+<AZTFIMEndpoint/>
+<AZOAuthEnforceScope>off</AZOAuthEnforceScope>
+<AZOAuthExportHeaders>on</AZOAuthExportHeaders>
+<AZTAMPACReturn>off</AZTAMPACReturn>
+<AZTAMPACUse>off</AZTAMPACUse>
+<AZLDAPReadTimeout>60</AZLDAPReadTimeout>
+<AZSSLClientConfigType>proxy</AZSSLClientConfigType>
+<AZSSLClientProfile/>
+<AZLDAPBindPasswordAlias/>
+<AZSMRequestType>webagent</AZSMRequestType>
+<AZSMCookieFlow>
+<frontend>off</frontend>
+<backend>off</backend></AZSMCookieFlow>
+<AZSMHeaderFlow>
+<frontend>off</frontend>
+<backend>off</backend></AZSMHeaderFlow>
+<AZSMCookieAttributes/>
+<AZCacheControl>disable-all</AZCacheControl></Authorize>
+<PostProcess>
+<PPEnabled>off</PPEnabled>
+<PPCustomURL/>
+<PPSAMLAuthAssertion>off</PPSAMLAuthAssertion>
+<PPSAMLServerName>XS</PPSAMLServerName>
+<PPSAMLNameQualifier/>
+<PPKerberosTicket>off</PPKerberosTicket>
+<PPKerberosClient/>
+<PPKerberosClientPassword/>
+<PPKerberosServer/>
+<PPWSTrust>off</PPWSTrust>
+<PPTimestamp>on</PPTimestamp>
+<PPTimestampExpiry>0</PPTimestampExpiry>
+<PPAllowRenewal>off</PPAllowRenewal>
+<PPSAMLVersion>2.0</PPSAMLVersion>
+<PPSAMLSendSLO>off</PPSAMLSendSLO>
+<PPSAMLSLOEndpoint/>
+<PPSSLProxyProfile/>
+<PPWSUsernameToken>off</PPWSUsernameToken>
+<PPWSUsernameTokenPasswordType>Digest</PPWSUsernameTokenPasswordType>
+<PPSAMLValidity>0</PPSAMLValidity>
+<PPSAMLSkew>0</PPSAMLSkew>
+<PPWSUsernameTokenIncludePwd>on</PPWSUsernameTokenIncludePwd>
+<PPLTPA>off</PPLTPA>
+<PPLTPAVersion>LTPA2</PPLTPAVersion>
+<PPLTPAExpiry>600</PPLTPAExpiry>
+<PPLTPAKeyFile/>
+<PPLTPAKeyFilePassword/>
+<PPLTPAStashFile/>
+<PPKerberosSPNEGOToken>off</PPKerberosSPNEGOToken>
+<PPKerberosBstValueType>http://docs.oasis-open.org/wss/oasis-wss-kerberos-token-profile-1.1#GSS_Kerberosv5_AP_REQ</PPKerberosBstValueType>
+<PPSAMLUseWSSec>off</PPSAMLUseWSSec>
+<PPKerberosClientKeytab/>
+<PPUseWSSec>off</PPUseWSSec>
+<PPActorRoleID/>
+<PPTFIMTokenMapping>off</PPTFIMTokenMapping>
+<PPTFIMEndpoint/>
+<PPWSDerivedKeyUsernameToken>off</PPWSDerivedKeyUsernameToken>
+<PPWSDerivedKeyUsernameTokenIterations>1000</PPWSDerivedKeyUsernameTokenIterations>
+<PPWSUsernameTokenAllowReplacement>off</PPWSUsernameTokenAllowReplacement>
+<PPTFIMReplaceMethod>all</PPTFIMReplaceMethod>
+<PPTFIMRetrieveMode>CallTFIM</PPTFIMRetrieveMode>
+<PPHMACSigningAlg>hmac-sha1</PPHMACSigningAlg>
+<PPSigningHashAlg>sha1</PPSigningHashAlg>
+<PPWSTrustHeader>off</PPWSTrustHeader>
+<PPWSSCKeySource>random</PPWSSCKeySource>
+<PPSharedSecretKey/>
+<PPWSTrustRenewalWait>0</PPWSTrustRenewalWait>
+<PPWSTrustNewInstance>off</PPWSTrustNewInstance>
+<PPWSTrustNewKey>off</PPWSTrustNewKey>
+<PPWSTrustNeverExpire>off</PPWSTrustNeverExpire>
+<PPICRXToken>off</PPICRXToken>
+<PPICRXUserRealm/>
+<PPSAMLIdentityProvider>off</PPSAMLIdentityProvider>
+<PPSAMLProtocol>assertion</PPSAMLProtocol>
+<PPSAMLResponseDestination/>
+<PPResultWrapup>wssec-replace</PPResultWrapup>
+<PPSAMLAssertionType>
+<authentication>on</authentication>
+<attribute>on</attribute>
+<authorization>off</authorization></PPSAMLAssertionType>
+<PPSAMLSubjectConfirm>bearer</PPSAMLSubjectConfirm>
+<PPSAMLNameID>on</PPSAMLNameID>
+<PPSAMLNameIDFormat/>
+<PPSAMLRecipient/>
+<PPSAMLAudience/>
+<PPSAMLOmitNotBefore>off</PPSAMLOmitNotBefore>
+<PPOneTimeUse>off</PPOneTimeUse>
+<PPSAMLProxy>off</PPSAMLProxy>
+<PPSAMLProxyAudience/>
+<PPSAMLProxyCount>0</PPSAMLProxyCount>
+<PPSAMLAuthzAction>AllHTTP</PPSAMLAuthzAction>
+<PPSAMLAttributes/>
+<PPLTPAInsertCookie>on</PPLTPAInsertCookie>
+<PPTAMPACPropagate>off</PPTAMPACPropagate>
+<PPTAMHeader>iv-creds</PPTAMHeader>
+<PPTAMHeaderSize>0</PPTAMHeaderSize>
+<PPKerberosUseS4U2Proxy>off</PPKerberosUseS4U2Proxy>
+<PPCookieAttributes/>
+<PPKerberosUseS4U2SelfAndS4U2Proxy>off</PPKerberosUseS4U2SelfAndS4U2Proxy>
+<PPKerberosClientSource>mc-output</PPKerberosClientSource>
+<PPKerberosSelf/>
+<PPKerberosSelfKeytab/>
+<PPKerberosClientCustomURL/>
+<PPKerberosClientCtxVar/>
+<PPKerberosServerSource>as-is-string</PPKerberosServerSource>
+<PPKerberosServerCustomURL/>
+<PPKerberosServerCtxVar/>
+<PPSSLClientConfigType>proxy</PPSSLClientConfigType>
+<PPSSLClientProfile/>
+<PPLTPAKeyFilePasswordAlias/>
+<PPJWT>off</PPJWT>
+<PPJWTGenerator/></PostProcess>
+<SAMLSigningHashAlg>sha1</SAMLSigningHashAlg>
+<SAMLSigningAlg>rsa</SAMLSigningAlg>
+<LDAPsuffix/>
+<LogAllowed>on</LogAllowed>
+<LogAllowedLevel>info</LogAllowedLevel>
+<LogRejected>on</LogRejected>
+<LogRejectedLevel>warn</LogRejectedLevel>
+<PingIdentityCompatibility>off</PingIdentityCompatibility>
+<DoSValve>3</DoSValve>
+<LDAPVersion>v2</LDAPVersion>
+<EnforceSOAPActor>on</EnforceSOAPActor>
+<WSSecActorRoleID/>
+<DynConfig>none</DynConfig></AAAPolicy></configuration><files><file name="cert:///bmtest.cer" src="cert/bmtest.cer" location="cert" key="true"/><file name="cert:///testsitctiappp.cer" src="cert/testsitctiappp.cer" location="cert" key="true"/><file name="cert:///tiplusuat.crt" src="cert/tiplusuat.crt" location="cert" key="true"/><file name="cert:///testpseccapp.cer" src="cert/testpseccapp.cer" location="cert" key="true"/><file name="cert:///controlm.cer" src="cert/controlm.cer" location="cert" key="true"/><file name="cert:///testfinneoapp.cer" src="cert/testfinneoapp.cer" location="cert" key="true"/><file name="cert:///testmobwltapp2.cer" src="cert/testmobwltapp2.cer" location="cert" key="true"/><file name="cert:///sitmthqeccapp.cer" src="cert/sitmthqeccapp.cer" location="cert" key="true"/><file name="cert:///News1sitportal.cer" src="cert/News1sitportal.cer" location="cert" key="true"/><file name="cert:///testfinibmbapp4.cer" src="cert/testfinibmbapp4.cer" location="cert" key="true"/><file name="cert:///testfinibmbapp1.cer" src="cert/testfinibmbapp1.cer" location="cert" key="true"/><file name="cert:///testfinibmbapp3.cer" src="cert/testfinibmbapp3.cer" location="cert" key="true"/><file name="cert:///testfclbaapnew.cer" src="cert/testfclbaapnew.cer" location="cert" key="true"/><file name="cert:///smsha.cer" src="cert/smsha.cer" location="cert" key="true"/><file name="cert:///ERP_SIT_New.cer" src="cert/ERP_SIT_New.cer" location="cert" key="true"/><file name="cert:///uatfmsffcomp1_2022.cer" src="cert/uatfmsffcomp1_2022.cer" location="cert" key="true"/><file name="cert:///uatfmsffcomp2_2022.cer" src="cert/uatfmsffcomp2_2022.cer" location="cert" key="true"/><file name="cert:///uatbo.txnbanking.com.cer" src="cert/uatbo.txnbanking.com.cer" location="cert" key="true"/><file name="cert:///sit1mtqibmbapp.cer" src="cert/sit1mtqibmbapp.cer" location="cert" key="true"/><file name="cert:///testachreconapp.cer" src="cert/testachreconapp.cer" location="cert" key="true"/><file name="cert:///omniflow.cer" src="cert/omniflow.cer" location="cert" key="true"/><file name="cert:///MethaqESBCertificate.cer" src="cert/MethaqESBCertificate.cer" location="cert" key="true"/><file name="cert:///ER.cer" src="cert/ER.cer" location="cert" key="true"/><file name="cert:///BankPayMTQ.cer" src="cert/BankPayMTQ.cer" location="cert" key="true"/><file name="cert:///ESQ_App.cer" src="cert/ESQ_App.cer" location="cert" key="true"/><file name="local:///AAA/AAAInfo.xml" src="local/AAA/AAAInfo.xml" location="local" hash="jwRG0koYjjvFQOcRz2w1Qa6nrXM="/><file name="local:///AAA/ldap_ESBPROD.xslt" src="local/AAA/ldap_ESBPROD.xslt" location="local" hash="FgMHJtdvURBGDiCOqV51VJkx5+s="/><file name="webgui:///clixform.xsl" src="dp-aux/clixform.xsl" location="dp-aux" internal="true" hash="ndo2ibZFjyGf51JHE2u8ejcJHl4="/><file name="webgui:///SchemaUtil.xsl" src="dp-aux/SchemaUtil.xsl" location="dp-aux" internal="true" hash="6hD9ZJLuJuA77pjUTRrQ+L1nLh8="/><file name="webgui:///management.xsl" src="dp-aux/management.xsl" location="dp-aux" internal="true" hash="pi0c46mGrlbqTpsWjG3QUxFOCYU="/><file name="webgui:///map-dmz.xsl" src="dp-aux/map-dmz.xsl" location="dp-aux" internal="true" hash="EHuv+ZqZ0r6TD3d5XtbUM0nBbTM="/><file name="webgui:///drMgmt.xml" src="dp-aux/drMgmt.xml" location="dp-aux" internal="true" hash="TeB3WXHmH9pluzA90V32nMjFrAM="/><file name="webgui:///basetypes.xml" src="dp-aux/basetypes.xml" location="dp-aux" internal="true" hash="HrLsg2FhC6fPlGYI25NijeP828E="/></files></datapower-configuration>
