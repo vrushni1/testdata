@@ -7,7 +7,10 @@ resource "null_resource" "hello" {
     command = "echo Hello, Terraform!"
   }
 }
-
-output "hello_message" {
+output "message" {
   value = "Hello, Terraform!"
+}
+
+output "className" {
+  value = "terraform_module"
 }
