@@ -1,16 +1,18 @@
-provider "local" {
-  # No configuration is required for the local provider
-}
-
-resource "null_resource" "hello" {
-  provisioner "local-exec" {
-    command = "echo Hello, Terraform!"
+terraform {
+  required_providers {
+    local = {
+      source  = "hashicorp/local"
+      version = "~> 2.0"
+    }
   }
 }
+
+provider "local" {}
+
 output "message" {
-  value = "Hello, Terraform!"
+  value = "terraform plugin test ok"
 }
 
 output "className" {
-  value = "terraform_module"
+  value = "automation-test"
 }
